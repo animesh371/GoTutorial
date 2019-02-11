@@ -17,19 +17,19 @@ func (c *car) kmhr(newspeed float32) float32{
 }
 
 func main() {
-	// bmw := car{
-	// 	wheels: 4, 
-	// 	seats:5, 
-	// 	max_speed: 200}
+	 bmw := car{
+	 	wheels: 4, 
+	 	seats:5, 
+	 	max_speed: 200}
 
-	merc := car{
-		wheels: 4, 
-		seats:4, 
-		max_speed: 130.0}	
+//	merc := car{
+//		wheels: 4, 
+//		seats:4, 
+//		max_speed: 130.0}	
 
-	fmt.Println(merc.max_speed)
-	fmt.Println(merc.kmhr(101.0))
-	fmt.Println(merc.max_speed)
+	fmt.Println(bmw.max_speed)
+	fmt.Println(bmw.kmhr(101.0))
+	fmt.Println(bmw.max_speed)
 
 
 

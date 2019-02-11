@@ -1,3 +1,2 @@
-# GoTutorial
-
-# Contains Implementation of youtube tutorials by Sentdex
+# GoLang Tutorial
+Implementation of Go tutorial by sentdex on youtube

@@ -85,7 +85,7 @@ func (orderManager *OrderManager) updateStatus(id string, status string) string 
 
 func (orderManager *OrderManager) getPendingOrders() []Order {
 	var pendingOrders []Order
-	pendingStatus := "PENDING"
+	pendingStatus := "Pending"
 	for orderID, order := range orderManager.orders {
 		_ = orderID
 		if strings.Compare(order.status, pendingStatus) == 0 {

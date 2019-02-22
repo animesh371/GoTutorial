@@ -13,15 +13,15 @@ type siteMapIndex struct {
 }
 
 func main() {
-	// http.HandleFunc("/", handlers.IndexHandler)
-	// http.ListenAndServe(":8000", nil)
-	// fmt.Println("hai")
+	http.HandleFunc("/", handlers.IndexHandler)
+	http.ListenAndServe(":8000", nil)
+	fmt.Println("hai")
 
-	// resp, _ := http.Get("https://www.washingtonpost.com/news-sitemaps/index.xml")
-	// bytes, _ := ioutil.ReadAll(resp.Body)
+	resp, _ := http.Get("https://www.washingtonpost.com/news-sitemaps/index.xml")
+	bytes, _ := ioutil.ReadAll(resp.Body)
 
-	// var s siteMapIndex
-	// xml.Unmarshal(bytes, &s)
-	// fmt.Println(s.locations)
+	var s siteMapIndex
+	xml.Unmarshal(bytes, &s)
+	fmt.Println(s.locations)
 	fmt.Println(handlers.Index)
 }
